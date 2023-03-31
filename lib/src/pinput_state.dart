@@ -118,6 +118,7 @@ class _PinputState extends State<Pinput>
       useUserConsentApi: useUserConsentApi,
       matcher: widget.smsCodeMatcher,
       senderPhoneNumber: widget.senderPhoneNumber,
+      filter: widget.smsFilterMatcher,
     );
     if (res.succeed && res.codeFound && res.code!.length == widget.length) {
       _effectiveController.setText(res.code!);
