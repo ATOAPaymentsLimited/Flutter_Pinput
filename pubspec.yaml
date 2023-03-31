@@ -4,6 +4,7 @@ description: Pin code input (OTP) text field, iOS SMS autofill, Android SMS auto
 homepage: https://github.com/Tkko/Flutter_PinPut
 repository: https://github.com/Tkko/Flutter_PinPut
 issue_tracker: https://github.com/Tkko/Flutter_Pinput/issues
+publish_to: none
 screenshots:
   - description: 'Pin input example'
     path: example/pinput_demo_1.webp
@@ -13,14 +14,15 @@ funding:
   - https://ko-fi.com/flutterman
 
 environment:
-  sdk: '>=2.15.0 <3.0.0'
-  flutter: ">=3.7.0"
-
+  sdk: ">=2.17.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  smart_auth: ^1.0.8
+  smart_auth:
+    git:
+      url: git@github.com:ATOAPaymentsLimited/flutter_smart_auth.git
+      ref: main
   universal_platform: ^1.0.0+1
 
 dev_dependencies:

@@ -7,6 +7,8 @@ class PinputConstants {
   /// The default value [Pinput.smsCodeMatcher]
   static const defaultSmsCodeMatcher = '\\d{4,7}';
 
+  static const defaultSmsFilterMatcher = '';
+
   /// The default value [Pinput.animationDuration]
   static const _animationDuration = Duration(milliseconds: 180);
 
